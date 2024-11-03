@@ -1,4 +1,32 @@
-/* * { 
+html,
+body {
+  height: 100%;
+  /* ความสูง 100% สำหรับ body และ html */
+  margin: 0;
+  /* ลบ margin */
+}
+
+.h-screen {
+  height: 100vh;
+  /* ความสูง 100% ของ viewport */
+}
+
+.flex {
+  display: flex;
+  /* ใช้ flexbox */
+}
+
+.align-items-center {
+  align-items: center;
+  /* จัดแนวแนวตั้งให้กลาง */
+}
+
+.justify-content-center {
+  justify-content: center;
+  /* จัดแนวนอนให้กลาง */
+}
+
+/* * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -48,4 +76,3 @@ body {
 .navbar a:hover::before {
     width: 100%;
 }*/
-
