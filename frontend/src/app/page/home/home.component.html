@@ -1,22 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>navbar</title>
   <link rel="stylesheet" href="home.component.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/primeicons/primeicons.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/primeng/14.0.0/primeng.min.css">
 </head>
 
 <body>
 
-  <header class="header"> 
-      <a href="#" class="logo">logo</a>
-        <nav class="navbar"> 
-          <a href="#">หน้าหลัก</a>
-          <a href="#">ห้องพัก</a>
-          <a href="#">ที่ตั้ง</a>
-          <a href="#">ติดต่อเรา</a>
-        </nav>
-      </header>
+  <header class="header">
+    <a href="#" class="logo">logo</a>
+    <nav class="navbar">
+      <a href="#">หน้าหลัก</a>
+      <a href="#">ห้องพัก</a>
+      <a href="#">ที่ตั้ง</a>
+      <a href="#">ติดต่อเรา</a>
+    </nav>
+  </header>
+
+  <div class="flex align-items-center justify-content-center min-h-screen">
+    <p-card>
+      <ng-template pTemplate="header">
+        <h2>handsome sun</h2>
+      </ng-template>
+      <p></p>
+      <p-button label="handsome sun" icon="pi pi-check" class="p-button-raised"></p-button>
+    </p-card>
+  </div>
+
+
 </body>
+
 </html>
