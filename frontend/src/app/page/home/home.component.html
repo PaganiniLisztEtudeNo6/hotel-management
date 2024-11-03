@@ -46,40 +46,143 @@
 </body>
 </html> -->
 
+
+
 <div class="flex align-items-center justify-content-center h-screen">
   <div class="surface-card p-4 shadow-2 border-round" style="width: 700px;">
     <p-card header="เลือกดูห้องพัก">
-      <!-- <p-card header="เลือกดูห้องพัก" subheader="Card Subheader"> -->
       <ng-template pTemplate="header">
-        <!-- <img alt="Card" src="https://primefaces.org/cdn/primeng/images/card-ng.jpg" style="width: 100%; height: auto;" /> -->
+        <!-- สามารถเพิ่มเนื้อหาสำหรับ header ได้ที่นี่ -->
       </ng-template>
 
-      <!-- แสดงข้อความและตาราง nested-grid -->
-      <div>
+      <!-- แสดงปุ่มทั้งหมด 30 ปุ่ม -->
+      <div class="grid nested-grid">
+        <div class="col-8">
+          <div class="grid">
 
-        <div class="grid nested-grid">
-          <div class="col-8">
-            <div class="grid">
-              <div class="col-6">
-                <div
-                  class="text-center p-3 border-round-sm bg-primary font-bold bg-primary-100 w-12rem m-3 border-round p-3">
-                  <p-button label="001" [rounded]="true" severity="info" />
-                </div>
-                <div
-                  class="text-center p-3 border-round-sm bg-primary font-bold bg-primary-100 w-12rem m-3 border-round p-3">
-                  <p-button label="002" [rounded]="true" severity="info" />
-                </div>
+            <!-- แถวที่ 1 -->
+            <div class="col-12 grid">
+              <div class="col-2 text-center p-3 border-round-sm font-bold">
+                <p-button label="001" [rounded]="true" severity="info"></p-button>
               </div>
-              <div class="col-6">
-                <div class="text-center p-3 border-round-sm bg-primary font-bold">6</div>
+              <div class="col-2 text-center p-3 border-round-sm font-bold">
+                <p-button label="002" [rounded]="true" severity="secondary"></p-button>
               </div>
-              <div class="col-12">
-                <div class="text-center p-3 border-round-sm bg-primary font-bold">12</div>
+              <div class="col-2 text-center p-3 border-round-sm font-bold">
+                <p-button label="003" [rounded]="true" severity="info"></p-button>
+              </div>
+              <div class="col-2 text-center p-3 border-round-sm font-bold">
+                <p-button label="004" [rounded]="true" severity="secondary"></p-button>
+              </div>
+              <div class="col-2 text-center p-3 border-round-sm font-bold">
+                <p-button label="005" [rounded]="true" severity="info"></p-button>
+              </div>
+              <div class="col-2 text-center p-3 border-round-sm font-bold">
+                <p-button label="006" [rounded]="true" severity="secondary"></p-button>
               </div>
             </div>
-          </div>
-          <div class="col-4">
-            <div class="text-center p-3 border-round-sm h-full bg-primary font-bold">4</div>
+
+            <!-- แถวที่ 2 -->
+            <div class="col-12 grid">
+              <div class="col-2 text-center p-3 border-round-sm font-bold">
+                <p-button label="007" [rounded]="true" severity="info"></p-button>
+              </div>
+              <div class="col-2 text-center p-3 border-round-sm font-bold">
+                <p-button label="008" [rounded]="true" severity="secondary"></p-button>
+              </div>
+              <div class="col-2 text-center p-3 border-round-sm font-bold">
+                <p-button label="009" [rounded]="true" severity="info"></p-button>
+              </div>
+              <div class="col-2 text-center p-3 border-round-sm font-bold">
+                <p-button label="010" [rounded]="true" severity="secondary"></p-button>
+              </div>
+              <div class="col-2 text-center p-3 border-round-sm font-bold">
+                <p-button label="011" [rounded]="true" severity="info"></p-button>
+              </div>
+              <div class="col-2 text-center p-3 border-round-sm font-bold">
+                <p-button label="012" [rounded]="true" severity="secondary"></p-button>
+              </div>
+            </div>
+
+            <!-- แถวที่ 3 -->
+            <div class="col-12 grid">
+              <div class="col-2 text-center p-3 border-round-sm font-bold">
+                <p-button label="013" [rounded]="true" severity="info"></p-button>
+              </div>
+              <div class="col-2 text-center p-3 border-round-sm font-bold">
+                <p-button label="014" [rounded]="true" severity="secondary"></p-button>
+              </div>
+              <div class="col-2 text-center p-3 border-round-sm font-bold">
+                <p-button label="015" [rounded]="true" severity="info"></p-button>
+              </div>
+              <div class="col-2 text-center p-3 border-round-sm font-bold">
+                <p-button label="016" [rounded]="true" severity="secondary"></p-button>
+              </div>
+              <div class="col-2 text-center p-3 border-round-sm font-bold">
+                <p-button label="017" [rounded]="true" severity="info"></p-button>
+              </div>
+              <div class="col-2 text-center p-3 border-round-sm font-bold">
+                <p-button label="018" [rounded]="true" severity="secondary"></p-button>
+              </div>
+            </div>
+
+            <!-- แถวที่ 4 -->
+            <div class="col-12 grid">
+              <div class="col-2 text-center p-3 border-round-sm font-bold">
+                <p-button label="019" [rounded]="true" severity="info"></p-button>
+              </div>
+              <div class="col-2 text-center p-3 border-round-sm font-bold">
+                <p-button label="020" [rounded]="true" severity="secondary"></p-button>
+              </div>
+              <div class="col-2 text-center p-3 border-round-sm font-bold">
+                <p-button label="021" [rounded]="true" severity="info"></p-button>
+              </div>
+              <div class="col-2 text-center p-3 border-round-sm font-bold">
+                <p-button label="022" [rounded]="true" severity="secondary"></p-button>
+              </div>
+              <div class="col-2 text-center p-3 border-round-sm font-bold">
+                <p-button label="023" [rounded]="true" severity="info"></p-button>
+              </div>
+              <div class="col-2 text-center p-3 border-round-sm font-bold">
+                <p-button label="024" [rounded]="true" severity="secondary"></p-button>
+              </div>
+            </div>
+
+            <!-- แถวที่ 5 -->
+            <div class="col-12 grid">
+              <div class="col-2 text-center p-3 border-round-sm font-bold">
+                <p-button label="025" [rounded]="true" severity="info"></p-button>
+              </div>
+              <div class="col-2 text-center p-3 border-round-sm font-bold">
+                <p-button label="026" [rounded]="true" severity="secondary"></p-button>
+              </div>
+              <div class="col-2 text-center p-3 border-round-sm font-bold">
+                <p-button label="027" [rounded]="true" severity="info"></p-button>
+              </div>
+              <div class="col-2 text-center p-3 border-round-sm font-bold">
+                <p-button label="028" [rounded]="true" severity="secondary"></p-button>
+              </div>
+              <div class="col-2 text-center p-3 border-round-sm font-bold">
+                <p-button label="029" [rounded]="true" severity="info"></p-button>
+              </div>
+              <div class="col-2 text-center p-3 border-round-sm font-bold">
+                <p-button label="030" [rounded]="true" severity="secondary"></p-button>
+              </div>
+            </div>
+
           </div>
         </div>
+
+        <!-- ส่วนแสดงรูปภาพทางด้านขวา -->
+        <div class="col-4">
+          <div class="grid">
+            <img src="https://img.freepik.com/free-photo/luxury-classic-modern-bedroom-suite-hotel_105762-1787.jpg" alt="Image 1" class="w-full border-round mb-2" style="height: 200px; object-fit: cover;">
+           
+          </div>
+        </div>
+
       </div>
+
+    </p-card>
+  </div>
+</div>
