@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -8,11 +8,11 @@
   <link rel="stylesheet" href="home.component.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/primeicons/primeicons.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/primeng/14.0.0/primeng.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/primeflex/3.1.0/primeflex.min.css">
 </head>
 
 <body>
-
-  <header class="header">
+  <div class="header"> 
     <a href="#" class="logo">logo</a>
     <nav class="navbar">
       <a href="#">หน้าหลัก</a>
@@ -20,19 +20,48 @@
       <a href="#">ที่ตั้ง</a>
       <a href="#">ติดต่อเรา</a>
     </nav>
-  </header>
-
-  <div class="flex align-items-center justify-content-center min-h-screen">
-    <p-card>
-      <ng-template pTemplate="header">
-        <h2>handsome sun</h2>
-      </ng-template>
-      <p></p>
-      <p-button label="handsome sun" icon="pi pi-check" class="p-button-raised"></p-button>
-    </p-card>
   </div>
+  -->
 
-
+  <!-- จัด card ให้อยู่กลางจอ 
+  <div class="flex align-items-center justify-content-center h-screen">
+    <div class="surface-card p-4 shadow-2 border-round" style="width: 700px; ">
+      <p-card header="Advanced Card" subheader="Card Subheader">
+        <ng-template pTemplate="header">
+          <img alt="Card" src="https://primefaces.org/cdn/primeng/images/card-ng.jpg" style="width: 100%; height: auto;" />
+        </ng-template>
+        <p>
+          
+          Lorem ipsum dolor sit amet...
+        </p>
+        <ng-template pTemplate="footer">
+          <div class="flex gap-3 mt-1">
+            <p-button label="Cancel" severity="secondary" class="w-full" styleClass="w-full"></p-button>
+            <p-button label="Save" class="w-full" styleClass="w-full"></p-button>
+          </div>
+        </ng-template>
+      </p-card>
+    </div>
+  </div>
 </body>
+</html> -->
 
-</html>
+  <div class="flex align-items-center justify-content-center h-screen">
+    <div class="surface-card p-4 shadow-2 border-round" style="width: 700px; ">
+      <p-card header="Advanced Card" subheader="Card Subheader">
+        <ng-template pTemplate="header">
+          <img alt="Card" src="https://primefaces.org/cdn/primeng/images/card-ng.jpg" style="width: 100%; height: auto;" />
+        </ng-template>
+        <p>
+          
+          Lorem ipsum dolor sit amet...
+        </p>
+        <ng-template pTemplate="footer">
+          <div class="flex gap-3 mt-1">
+            <p-button label="Cancel" severity="secondary" class="w-full" styleClass="w-full"></p-button>
+            <p-button label="Save" class="w-full" styleClass="w-full"></p-button>
+          </div>
+        </ng-template>
+      </p-card>
+    </div>
+  </div>
