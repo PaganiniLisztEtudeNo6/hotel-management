@@ -13,13 +13,17 @@ export const routes: Routes = [
 ];
 
 @NgModule({
+  declarations: [
+
+  ],
   imports: [
     RouterModule.forRoot(routes),
     HomeComponent,
     Page1Component,
     Page2Component,
-    Page3Component,
+    Page3Component
   ],
   exports: [RouterModule]
+
 })
 export class AppRoutingModule { }
