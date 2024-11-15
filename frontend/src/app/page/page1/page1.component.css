@@ -1,9 +1,8 @@
-/* General */
 .container {
   font-family: Arial, sans-serif;
+  padding: 0%;
 }
 
-/* Navbar */
 .navbar {
   background-color: #7e9c90;
   padding: 10px 0;
@@ -21,15 +20,19 @@
 }
 
 .navbar-icon {
-  font-size: 24px;
+  font-size: 32px;
   color: #ffffff;
+  background-color: #757575;
+  border-radius: 50%;
+  display: inline-block;
+  width: 50px;
+    height: 50px;
+  text-align: center;
+    line-height: 50px;
 }
-
 .navbar-logo {
-  font-size: 28px;
-  font-family: "Charmonman", cursive;
-  font-weight: 400;
-  font-style: normal; /* ใช้ฟอนต์ที่ใกล้เคียง */
+  font-size: 40px;
+  font-family: 'Sukhumvit Set', sans-serif;
   color: #ffffff;
   font-weight: bold;
   text-align: center;
@@ -37,11 +40,16 @@
 
 .navbar-link {
   color: #ffffff;
-  font-size: 16px;
+  font-size: 24px;
   text-decoration: none;
+  transition: color 0.3s, transform 0.3s;
 }
 
-/* Main Content */
+.navbar-link:hover {
+  color: #ffffff;
+  transform: scale(1.1);
+}
+/*
 .main-content {
   display: flex;
   justify-content: center;
@@ -49,14 +57,12 @@
   margin: 30px 0;
 }
 
-/* Room Images */
 .room-images {
   display: flex;
   align-items: center;
   gap: 20px;
 }
 
-/* รูปภาพใหญ่ */
 .large-image {
   background-color: #7e9c90;
   color: #ffffff;
@@ -65,19 +71,17 @@
   align-items: center;
   justify-content: center;
   border-radius: 8px;
-  width: 65%; /* ปรับสัดส่วน */
-  height: 400px; /* ปรับขนาดให้สูงขึ้น */
+  width: 65%;
+  height: 500px;
 }
 
-/* กลุ่มรูปภาพเล็ก */
 .small-images {
   display: flex;
   flex-direction: column;
   gap: 15px;
-  width: 30%; /* สัดส่วนที่เหมาะสมกับรูปภาพใหญ่ */
+  width: 30%;
 }
 
-/* รูปภาพเล็ก */
 .small-image {
   background-color: #7e9c90;
   color: #ffffff;
@@ -86,35 +90,9 @@
   align-items: center;
   justify-content: center;
   border-radius: 8px;
-  width: 100%;
-  height: 190px; /* ความสูงสัมพันธ์กับรูปภาพใหญ่ */
+  height: 190px;
 }
 
-/* Booking Info */
-.booking-info {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  width: 35%;
-}
-
-.date-picker, .room-price {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.date-picker label, .room-price label {
-  width: 50px;
-  font-weight: bold;
-}
-
-.date-picker input, .room-price input {
-  flex: 1;
-  padding: 8px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
 
 .booking-button {
   padding: 10px;
@@ -126,35 +104,4 @@
   border-radius: 4px;
   cursor: pointer;
 }
-
-/* Amenities */
-.amenities {
-  display: flex;
-  gap: 10px;
-  margin: 20px;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.amenity {
-  padding: 5px 10px;
-  border: 1px solid #7e9c90;
-  border-radius: 20px;
-  font-size: 14px;
-  color: #333;
-}
-.date-picker {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  margin-bottom: 10px;
-}
-
-.date-picker label {
-  width: 50px;
-  font-weight: bold;
-}
-
-p-calendar {
-  flex: 1;
-}
+ */

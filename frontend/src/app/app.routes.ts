@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { CommonModule } from '@angular/common';
 import { HomeComponent } from './page/home/home.component';
 import { Page1Component } from './page/page1/page1.component';
 import { Page2Component } from './page/page2/page2.component';
@@ -22,6 +23,7 @@ export const routes: Routes = [
 
   ],
   imports: [
+    CommonModule,
     RouterModule.forRoot(routes),
     HomeComponent,
     Page1Component,

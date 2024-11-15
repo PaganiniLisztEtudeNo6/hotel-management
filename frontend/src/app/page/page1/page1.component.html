@@ -3,58 +3,64 @@
 <link href="https://fonts.googleapis.com/css2?family=Charmonman:wght@400;700&display=swap" rel="stylesheet">
 
 <div class="container">
-    <!-- Navbar -->
-    <nav class="navbar">
-      <div class="navbar-container">
-        <i class="pi pi-user navbar-icon"></i>
-        <a href="page1" class="navbar-link">ห้องพัก</a>
-        <div class="navbar-logo">สุนทรวรรณ</div>
-        <a href="page2" class="navbar-link">สถานที่ตั้ง</a>
-        <a href="page3" class="navbar-link">ติดต่อเรา</a>
-      </div>
-    </nav>
-  
-    <div class="container p-5">
-  <!-- Room Images Section -->
-  <div class="grid">
-    <div class="col-8">
-      <div class="large-image surface-300 p-4 text-center border-round">รูปห้อง</div>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="navbar-container">
+      <i class="pi pi-user navbar-icon"></i>
+      <a href="#rooms" class="navbar-link">ห้องพัก</a>
+      <div class="navbar-logo">สุนทรวรรณ</div>
+      <a href="#location" class="navbar-link">สถานที่ตั้ง</a>
+      <a href="#contact" class="navbar-link">ติดต่อเรา</a>
     </div>
-    <div class="col-4">
-      <div class="small-image surface-300 p-4 text-center border-round mb-3">รูปห้อง</div>
-      <div class="small-image surface-300 p-4 text-center border-round">รูปห้อง</div>
+  </nav>
+  <div class="container p-8">
+    <div class="grid">
+      <div class="col-4">
+        <div class="large-image surface-300 p-4 text-center border-round w-full h-full">รูปห้อง</div>
+      </div>
+      <div class="col-2">
+        <div class="small-image surface-300 p-4 text-center border-round mb-3">รูปห้อง</div>
+        <div class="small-image surface-300 p-4 text-center border-round">รูปห้อง</div>
+      </div>
+      <div class="col-6">
+        <div class="grid formgrid">
+          <!-- Field: ตั้งแต่ -->
+          <div class="field col-12">
+            <label for="start-date" class=" mb-2">ตั้งแต่</label>
+            <p-calendar id="start-date" placeholder="เลือกวันที่" class="w-full">
+            </p-calendar>
+          </div>
+
+          <!-- Field: ถึง -->
+          <div class="field col-12">
+            <label for="end-date" class=" mb-2">ถึง</label>
+            <p-calendar id="end-date" placeholder="เลือกวันที่" class="w-full">
+            </p-calendar>
+          </div>
+
+          <!-- Field: ราคาห้อง -->
+          <div class="field col-12">
+            <label for="price" class=" mb-2">ราคาห้อง : </label>
+
+          </div>
+          <div class="">
+            <div class="col-12">
+              <div class="">
+                <span class="amenity">เครื่องปรับอากาศ</span>
+                <span class="amenity">ห้องปลอดบุหรี่</span>
+                <span class="amenity">ตู้เย็น</span>
+                <span class="amenity">เตียงนอน</span>
+                <span class="amenity">คีย์การ์ด</span>
+              </div>
+            </div>
+          </div>
+          <!-- Button: จอง -->
+          <div class="col-12">
+            <button pButton type="button" label="จอง" class="p-button-rounded p-button-success w-full">
+            </button>
+          </div>
+        </div>
+      </div>
+
     </div>
   </div>
-
-  <!-- Booking Information -->
-  <div class="grid mt-5">
-    <div class="col-8">
-      <div class="amenities">
-        <span class="amenity">เครื่องปรับอากาศ</span>
-        <span class="amenity">ห้องปลอดบุหรี่</span>
-        <span class="amenity">ตู้เย็น</span>
-        <span class="amenity">เตียงนอน</span>
-        <span class="amenity">คีย์การ์ด</span>
-      </div>
-    </div>
-    <div class="col-4">
-      <div class="booking-info">
-        <div class="p-field mb-3">
-          <label for="start-date">ตั้งแต่</label>
-          <p-calendar id="start-date" [showIcon]="true" placeholder="เลือกวันที่"></p-calendar>
-        </div>
-        <div class="p-field mb-3">
-          <label for="end-date">ถึง</label>
-          <p-calendar id="end-date" [showIcon]="true" placeholder="เลือกวันที่"></p-calendar>
-        </div>
-        <div class="p-field mb-3">
-          <label for="price">ราคาห้อง</label>
-          <input id="price" type="text" pInputText placeholder="ระบุราคา" readonly />
-        </div>
-        <button pButton type="button" label="จอง" class="p-button-rounded p-button-success w-full"></button>
-      </div>
-    </div>
-  </div>
-</div>
-
-  
