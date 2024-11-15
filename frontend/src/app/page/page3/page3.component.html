@@ -1,25 +1,13 @@
 
-<div class="surface-card shadow-2">
-    <div class="p-4">
-      <p-menubar class="justify-content-center">
-        <!-- โลโก้และชื่อแอปพลิเคชันตรงกลาง -->
-        <ng-template pTemplate="start">
-          <div class="flex align-items-center">
-            <span class="font-bold text-xl mr-3">สุนทรวรรณ</span>
-          </div>
-        </ng-template>
-  
-        <!-- ลิงก์หรือปุ่มเมนูทางด้านขวา -->
-        <ng-template pTemplate="end">
-          <div class="flex align-items-center">
-            <button pButton label="ห้องพัก" class="p-button-sm p-button-secondary mr-2" routerLink="/frontend"></button>
-            <button pButton label="สถานที่ตั้ง" class="p-button-sm p-button-secondary mr-2" routerLink="/page2"></button>
-            <button pButton label="ติดต่อเรา" class="p-button-sm p-button-info mr-2" routerLink="/page3"></button>
-          </div>
-        </ng-template>
-      </p-menubar>
+<nav class="navbar">
+    <div class="navbar-container">
+      <i class="pi pi-user navbar-icon"></i>
+      <a href="#rooms" class="navbar-link">ห้องพัก</a>
+      <div class="navbar-logo">สุนทรวรรณ</div>
+      <a href="#location" class="navbar-link">สถานที่ตั้ง</a>
+      <a href="#contact" class="navbar-link">ติดต่อเรา</a>
     </div>
-  </div>
+  </nav>
 
 <div class="flex justify-content-center align-items-center min-h-screen">
     <p-card [style]="{ width: '900px' }">

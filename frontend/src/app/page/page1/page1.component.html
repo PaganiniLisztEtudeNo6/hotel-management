@@ -1,18 +1,51 @@
-<div class="grid nested-grid">
-    <div class="col-8">
-        <div class="grid">
-            <div class="col-6">
-                <div class="text-center p-3 border-round-sm bg-primary font-bold">6</div>
-            </div>
-            <div class="col-6">
-                <div class="text-center p-3 border-round-sm bg-primary font-bold">6</div>
-            </div>
-            <div class="col-12">
-                <div class="text-center p-3 border-round-sm bg-primary font-bold">12</div>
-            </div>
+<div class="container">
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="navbar-container">
+        <i class="pi pi-user navbar-icon"></i>
+        <a href="#rooms" class="navbar-link">ห้องพัก</a>
+        <div class="navbar-logo">สุนทรวรรณ</div>
+        <a href="#location" class="navbar-link">สถานที่ตั้ง</a>
+        <a href="#contact" class="navbar-link">ติดต่อเรา</a>
+      </div>
+    </nav>
+  
+    <!-- Main Content -->
+    <div class="main-content">
+      <!-- รูปห้อง -->
+      <div class="room-images">
+        <div class="large-image">รูปห้อง</div>
+        <div class="small-images">
+          <div class="small-image">รูปห้อง</div>
+          <div class="small-image">รูปห้อง</div>
         </div>
+      </div>
+  
+      <!-- ข้อมูลการจอง -->
+      <div class="booking-info">
+        <div class="date-picker">
+          <label for="start-date">ตั้งแต่</label>
+          <input id="start-date" type="text" placeholder="เลือกวันที่">
+        </div>
+        <div class="date-picker">
+          <label for="end-date">ถึง</label>
+          <input id="end-date" type="text" placeholder="เลือกวันที่">
+        </div>
+        <div class="room-price">
+          <label for="price">ราคาห้อง</label>
+          <input id="price" type="text" placeholder="ระบุราคา" readonly>
+        </div>
+        <button class="booking-button">จอง</button>
+      </div>
     </div>
-    <div class="col-4">
-        <div class="text-center p-3 border-round-sm h-full bg-primary font-bold">4</div>
+  
+    <!-- สิ่งอำนวยความสะดวก -->
+    <div class="amenities">
+      <span class="amenity">เครื่องปรับอากาศ</span>
+      <span class="amenity">ห้องปลอดบุหรี่</span>
+      <span class="amenity">ตู้เย็น</span>
+      <span class="amenity">เตียงนอน</span>
+      <span class="amenity">คีย์การ์ด</span>
     </div>
-</div>
+  </div>
+  

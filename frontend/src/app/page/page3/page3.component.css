@@ -1,0 +1,58 @@
+/* Navbar style */
+.navbar {
+    background-color: #7e9c90; /* สีเทาเขียว */
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .navbar-container {
+    width: 90%; /* กำหนดความกว้างของ Navbar */
+    max-width: 1200px; /* ตั้งค่า max-width เพื่อให้สมดุลในหน้าจอใหญ่ */
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* เว้นระยะห่างเท่าๆ กัน */
+  }
+  
+  /* Icon style */
+  .navbar-icon {
+    font-size: 24px;
+    color: #ffffff;
+  }
+  
+  /* Logo style */
+  .navbar-logo {
+    font-size: 28px;
+    font-family: 'Sukhumvit Set', sans-serif; /* ใช้ฟอนต์ที่ใกล้เคียง */
+    color: #ffffff;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  /* Link style */
+  .navbar-link {
+    color: #ffffff;
+    font-size: 18px;
+    text-decoration: none;
+    margin: 0 15px;
+  }
+  
+  .navbar-link:hover {
+    text-decoration: underline;
+  }
+  
+  /* เพิ่ม responsive design */
+  @media (max-width: 768px) {
+    .navbar-container {
+      flex-direction: column;
+      gap: 10px;
+    }
+    .navbar-link {
+      font-size: 16px;
+    }
+    .navbar-logo {
+      font-size: 24px;
+    }
+  }
+  
