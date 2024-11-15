@@ -10,45 +10,47 @@
       </div>
     </nav>
   
-    <!-- Main Content -->
-    <div class="main-content">
-      <!-- รูปห้อง -->
-      <div class="room-images">
-        <div class="large-image">รูปห้อง</div>
-        <div class="small-images">
-          <div class="small-image">รูปห้อง</div>
-          <div class="small-image">รูปห้อง</div>
+    <div class="container p-5">
+      <!-- Room Images Section -->
+      <div class="grid">
+        <div class="col-8">
+          <div class="large-image surface-300 p-4 text-center border-round">รูปห้อง</div>
+        </div>
+        <div class="col-4">
+          <div class="small-image surface-300 p-4 text-center border-round mb-3">รูปห้อง</div>
+          <div class="small-image surface-300 p-4 text-center border-round">รูปห้อง</div>
         </div>
       </div>
-  
-      
-      <!-- ข้อมูลการจอง -->
-      <div class="booking-info">
-          <label for="start-date">ตั้งแต่</label>
-          <div class="card flex justify-content-center">
-            <p-calendar [(ngModel)]="date1" />
-        
-            
+    
+      <!-- Booking Information -->
+      <div class="grid mt-5">
+        <div class="col-8">
+          <div class="amenities">
+            <span class="amenity">เครื่องปรับอากาศ</span>
+            <span class="amenity">ห้องปลอดบุหรี่</span>
+            <span class="amenity">ตู้เย็น</span>
+            <span class="amenity">เตียงนอน</span>
+            <span class="amenity">คีย์การ์ด</span>
+          </div>
         </div>
-        <div class="date-picker">
-          <label for="end-date">ถึง</label>
-          <input id="end-date" type="text" placeholder="เลือกวันที่">
+        <div class="col-4">
+          <div class="booking-info">
+            <div class="p-field mb-3">
+              <label for="start-date">ตั้งแต่</label>
+              <p-calendar id="start-date" [showIcon]="true" placeholder="เลือกวันที่"></p-calendar>
+            </div>
+            <div class="p-field mb-3">
+              <label for="end-date">ถึง</label>
+              <p-calendar id="end-date" [showIcon]="true" placeholder="เลือกวันที่"></p-calendar>
+            </div>
+            <div class="p-field mb-3">
+              <label for="price">ราคาห้อง</label>
+              <input id="price" type="text" pInputText placeholder="ระบุราคา" readonly />
+            </div>
+            <button pButton type="button" label="จอง" class="p-button-rounded p-button-success w-full"></button>
+          </div>
         </div>
-        <div class="room-price">
-          <label for="price">ราคาห้อง</label>
-          <input id="price" type="text" placeholder="ระบุราคา" readonly>
-        </div>
-        <button class="booking-button">จอง</button>
       </div>
     </div>
-  
-    <!-- สิ่งอำนวยความสะดวก -->
-    <div class="amenities">
-      <span class="amenity">เครื่องปรับอากาศ</span>
-      <span class="amenity">ห้องปลอดบุหรี่</span>
-      <span class="amenity">ตู้เย็น</span>
-      <span class="amenity">เตียงนอน</span>
-      <span class="amenity">คีย์การ์ด</span>
-    </div>
-  </div>
+    
   

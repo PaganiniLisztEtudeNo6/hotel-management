@@ -1,147 +1,157 @@
 /* General */
 .container {
-    font-family: Arial, sans-serif;
-  }
-  
-  /* Navbar */
-  .navbar {
-    background-color: #7e9c90;
-    padding: 10px 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .navbar-container {
-    width: 90%;
-    max-width: 1200px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  
-  .navbar-icon {
-    font-size: 24px;
-    color: #ffffff;
-  }
-  
-  .navbar-logo {
-    font-size: 28px;
-    font-family: 'Sukhumvit Set', sans-serif;
-    color: #ffffff;
-    font-weight: bold;
-  }
-  
-  .navbar-link {
-    color: #ffffff;
-    font-size: 16px;
-    text-decoration: none;
-  }
-  
-  /* Main Content */
-  .main-content {
-    display: flex;
-    justify-content: space-between;
-    margin: 20px;
-  }
-  
-  .room-images {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    width: 60%;
-  }
-  
-  .large-image, .small-image {
-    background-color: #7e9c90;
-    color: #ffffff;
-    font-size: 18px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 8px;
-  }
-  
-  .large-image {
-    height: 300px;
-  }
-  
-  .small-images {
-    display: flex;
-    gap: 10px;
-  }
-  
-  .small-image {
-    width: 100px;
-    height: 100px;
-  }
-  
-  /* Booking Info */
-  .booking-info {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    width: 35%;
-  }
-  
-  .date-picker, .room-price {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-  }
-  
-  .date-picker label, .room-price label {
-    width: 50px;
-    font-weight: bold;
-  }
-  
-  .date-picker input, .room-price input {
-    flex: 1;
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
-  
-  .booking-button {
-    padding: 10px;
-    background-color: #2d5240;
-    color: #ffffff;
-    font-size: 16px;
-    font-weight: bold;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  /* Amenities */
-  .amenities {
-    display: flex;
-    gap: 10px;
-    margin: 20px;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  
-  .amenity {
-    padding: 5px 10px;
-    border: 1px solid #7e9c90;
-    border-radius: 20px;
-    font-size: 14px;
-    color: #333;
-  }
-  .date-picker {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-bottom: 10px;
-  }
-  
-  .date-picker label {
-    width: 50px;
-    font-weight: bold;
-  }
-  
-  p-calendar {
-    flex: 1;
-  }
-  
+  font-family: Arial, sans-serif;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #7e9c90;
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar-container {
+  width: 90%;
+  max-width: 1200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar-icon {
+  font-size: 24px;
+  color: #ffffff;
+}
+
+.navbar-logo {
+  font-size: 28px;
+  font-family: 'Sukhumvit Set', sans-serif;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.navbar-link {
+  color: #ffffff;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+/* Main Content */
+.main-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 0;
+}
+
+/* Room Images */
+.room-images {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* รูปภาพใหญ่ */
+.large-image {
+  background-color: #7e9c90;
+  color: #ffffff;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  width: 65%; /* ปรับสัดส่วน */
+  height: 400px; /* ปรับขนาดให้สูงขึ้น */
+}
+
+/* กลุ่มรูปภาพเล็ก */
+.small-images {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 30%; /* สัดส่วนที่เหมาะสมกับรูปภาพใหญ่ */
+}
+
+/* รูปภาพเล็ก */
+.small-image {
+  background-color: #7e9c90;
+  color: #ffffff;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  width: 100%;
+  height: 190px; /* ความสูงสัมพันธ์กับรูปภาพใหญ่ */
+}
+
+/* Booking Info */
+.booking-info {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 35%;
+}
+
+.date-picker, .room-price {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.date-picker label, .room-price label {
+  width: 50px;
+  font-weight: bold;
+}
+
+.date-picker input, .room-price input {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.booking-button {
+  padding: 10px;
+  background-color: #2d5240;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Amenities */
+.amenities {
+  display: flex;
+  gap: 10px;
+  margin: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.amenity {
+  padding: 5px 10px;
+  border: 1px solid #7e9c90;
+  border-radius: 20px;
+  font-size: 14px;
+  color: #333;
+}
+.date-picker {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.date-picker label {
+  width: 50px;
+  font-weight: bold;
+}
+
+p-calendar {
+  flex: 1;
+}
