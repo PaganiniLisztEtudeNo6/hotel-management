@@ -24,10 +24,12 @@
   /* Logo style */
   .navbar-logo {
     font-size: 28px;
-    font-family: 'Sukhumvit Set', sans-serif; /* ใช้ฟอนต์ที่ใกล้เคียง */
-    color: #ffffff;
-    font-weight: bold;
-    text-align: center;
+  font-family: "Charmonman", cursive;
+  font-weight: 400;
+  font-style: normal; /* ใช้ฟอนต์ที่ใกล้เคียง */
+  color: #ffffff;
+  font-weight: bold;
+  text-align: center;
   }
   
   /* Link style */
