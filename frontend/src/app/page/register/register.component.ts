@@ -4,6 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { InputTextModule } from 'primeng/inputtext';
 import { ButtonModule } from 'primeng/button';
 
+
 @Component({
   selector: 'app-register',
   standalone: true,

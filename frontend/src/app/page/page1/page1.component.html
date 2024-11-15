@@ -21,11 +21,14 @@
         </div>
       </div>
   
+      
       <!-- ข้อมูลการจอง -->
       <div class="booking-info">
-        <div class="date-picker">
           <label for="start-date">ตั้งแต่</label>
-          <input id="start-date" type="text" placeholder="เลือกวันที่">
+          <div class="card flex justify-content-center">
+            <p-calendar [(ngModel)]="date1" />
+        
+            
         </div>
         <div class="date-picker">
           <label for="end-date">ถึง</label>
