@@ -3,63 +3,62 @@
 <link href="https://fonts.googleapis.com/css2?family=Charmonman:wght@400;700&display=swap" rel="stylesheet">
 
 <nav class="navbar">
-    <div class="navbar-container">
-      <i class="pi pi-user navbar-icon"></i>
-      <a href="page1" class="navbar-link">ห้องพัก</a>
-      <div class="navbar-logo">สุนทรวรรณ</div>
-      <a href="page2" class="navbar-link">สถานที่ตั้ง</a>
-      <a href="page3" class="navbar-link">ติดต่อเรา</a>
-    </div>
-  </nav>
+  <div class="navbar-container">
+    <i class="pi pi-user navbar-icon"></i>
+    <a href="" class="navbar-link">ห้องพัก</a>
+    <div class="navbar-logo">สุนทรวรรณ</div>
+    <a href="page2" class="navbar-link">สถานที่ตั้ง</a>
+    <a href="page3" class="navbar-link">ติดต่อเรา</a>
+  </div>
+</nav>
 
 <div class="flex justify-content-center align-items-center min-h-screen">
-    <p-card [style]="{ width: '900px' }">
-        <div class="flex justify-content-center align-items-center p-3 font-bold text-xl">
-            ติดต่อกลับ
-        </div>
-        <div>
-            <div class="grid justify-content-center align-items-center">
-                <div class="col-6">
-                    <div class="text-center p-3 font-bold">
-                        <div class="field">
-                            <div class="field flex flex-column align-items-start">
-                                <label for="firstname1" class="mb-2">เบอร์โทร:</label>
-                                <input id="firstname1" type="text"
-                                    class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full">
-                            </div>
-                            <div class="field flex flex-column align-items-start">
-                                <label for="lastname1" class="mb-2">ข้อความ:</label>
-                                <input id="lastname1" type="text"
-                                    class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6">
-                    <div class="text-left font-bold">
-                        * สามารถติดต่อได้ 3 ช่องทาง <br>
-                        * ติดต่อเราได้ทั้งทางโทรศัพท์หรือทางอีเมล และโดยการส่งข้อความและรอการติดต่อกลับ<br>
-                        <!-- ใช้ตัวแปร imageUrl ใน src ของ <img> -->
-                        <img [src]="imageUrl" alt="ช่องทางการติดต่อ" class="mb-3"
-                            style="width: 100%; max-width: 450px;">
-                    </div>
-                </div>
-
-                <div class="col-6">
-                    <p-button label="ส่ง" severity="success"></p-button>
-                </div>
-
-                
-                <div class="col-6">
-                    <div class="flex justify-content-start">
-                        <p class="mr-4">Email: Suntornw&#64;gmail.com</p> <!-- ใช้ &#64; แทน @ -->
-                        <p>Phone: 099-999-9999</p>
-                    </div>
-                </div>
-                
+  <p-card [style]="{ width: '900px' }">
+    <div class="flex justify-content-center align-items-center p-3 font-bold text-xl">
+      ติดต่อกลับ
+    </div>
+    <div>
+      <div class="grid justify-content-center align-items-center">
+        <div class="col-6">
+          <div class="text-center p-3 font-bold">
+            <div class="field">
+              <div class="field flex flex-column align-items-start">
+                <label for="firstname1" class="mb-2">เบอร์โทร:</label>
+                <input id="firstname1" type="text"
+                  class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full">
+              </div>
+              <div class="field flex flex-column align-items-start">
+                <label for="lastname1" class="mb-2">ข้อความ:</label>
+                <input id="lastname1" type="text"
+                  class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full">
+              </div>
             </div>
+          </div>
         </div>
-    </p-card>
+        <div class="col-6">
+          <div class="text-left font-bold">
+            * สามารถติดต่อได้ 3 ช่องทาง <br>
+            * ติดต่อเราได้ทั้งทางโทรศัพท์หรือทางอีเมล และโดยการส่งข้อความและรอการติดต่อกลับ<br>
+            <!-- ใช้ตัวแปร imageUrl ใน src ของ <img> -->
+            <img [src]="imageUrl" alt="ช่องทางการติดต่อ" class="mb-3" style="width: 100%; max-width: 450px;">
+          </div>
+        </div>
+
+        <div class="col-6">
+          <p-button label="ส่ง" severity="success"></p-button>
+        </div>
+
+
+        <div class="col-6">
+          <div class="flex justify-content-start">
+            <p class="mr-4">Email: Suntornw&#64;gmail.com</p> <!-- ใช้ &#64; แทน @ -->
+            <p>Phone: 099-999-9999</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </p-card>
 </div>
 
 
